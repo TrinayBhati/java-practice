@@ -1,7 +1,5 @@
 package classObjects;
 
-import java.util.Scanner;
-
 class Student {
         private int rollNo;
         String name;
