@@ -169,7 +169,29 @@ public class arrays{
 
 //===============================================================        
 
-            // rotate 2d array clockwise 90 degree
-                
+            // // rotate 2d array clockwise 90 degree
+            // // transpose the matrix then reverse row wise
+            // Scanner sc = new Scanner(System.in);
+            // int m = sc.nextInt();
+            // int n = sc.nextInt();
+
+            // int arr[][] = new int[m][n];
+            // for(int i = 0 ; i<m; i++){
+            //     for(int j = 0; j<n ; j++){
+            //         arr[i][j] = sc.nextInt();
+            //     }
+            // }
+            
+            // for(int i = 0 ; i< m ; i++){
+            //     for(int j =0; j<i ; j++){
+            //         int temp = arr[i][j];
+            //         arr[i][j] = arr[j][i];
+            //         arr[j][i] = temp;
+            //     }
+            // }
+            // // only thing left now is to reverse each row in the 2d array
+            // // that idk how to do 
+            
+
     }
 }
