@@ -85,7 +85,7 @@ public class linearSearch {
         }
 */
 
-    public static int linearSearch(int num[], int key){
+    public static int Search(int num[], int key){
 
         for( int i = 0 ; i< num.length; i++){
             if(num[i] == key){
@@ -98,7 +98,7 @@ public class linearSearch {
     public static void main(String[] args) {
         int numbers[] = {2,4, 10,5,7,8,1,9,19};
         int numToFind = 10;
-        int index = linearSearch(numbers, numToFind);
+        int index = Search(numbers, numToFind);
 
         if (index == -1){
             System.out.println("number not found");
