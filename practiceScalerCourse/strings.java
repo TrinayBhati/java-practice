@@ -40,17 +40,35 @@ public class strings {
             };
 
     }
+
+    public static void toLowerCase(String str){
+        char[] ch =  str.toCharArray();
+        for(int i = 0; i<ch.length; i++){
+            char s = ch[i];
+            if(s>='A' && s<='Z'){
+                char ans = (char)(s - 'A' +'a');
+                ch[i] = ans;
+            } 
+        }
+        for(char c:ch ){
+            System.out.print(c);
+        }
+    }
     public static void main(String[] args) {
         
         //remove vowels from a given string
         String str = "youcandoit";
         removeVowels(str);
         System.out.println();
+
         //reverse Vowels in given String
         String str1 = "youcandoit";
         reverseVowels(str1);
-        //convert upper case to lower case
+        System.out.println();
         
+        //convert upper case to lower case
+        String str2 = "yoU cAn dO It";
+        toLowerCase(str2);
 
         
     }
