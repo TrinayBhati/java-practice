@@ -1,0 +1,74 @@
+1.Variables:
+	Declared with a specific data type (e.g. int, double, boolean, etc.)	
+	Examples: int x = 5; double d = 3.14; String s = "Hello";
+2.Data types:
+	Primitive types: int, double, boolean, etc.
+	Reference types: String, arrays, classes, etc.
+3.Classes:
+	Basic building block of Java
+	Can have fields (variables) and methods (functions)
+4.Objects:
+	Created from a class using the new keyword
+	Manipulated using the methods of the class
+5.Methods:
+	Functions associated with a class
+	Declared with a return type, name, and parameters
+6.Example: public int add(int a, int b) { return a + b; }
+	Control flow statements:
+		if-else: for conditional execution
+		for: for iterating over a sequence
+		while: for repeatedly executing a block of code
+		do-while: for repeatedly executing a block of code
+7.Operators:
+	Arithmetic operators: +, -, *, /, %
+	Comparison operators: ==, !=, >, <, >=, <=
+	Logical operators: &&, ||, !
+8.Comments:
+	Single-line comments: //
+	Multi-line comments: /* */
+9.Exception handling:
+	Try-catch block for handling exceptions
+	Example: try { // code that might throw an exception } catch (ExceptionType e) { // code to handle exception }
+10.Import statement:
+	Use the import keyword to include classes from other libraries or packages in the current file
+	Example: import java.util.Scanner;
+11.Main method:
+	Entry point of a Java program
+	Standard signature: public static void main(String[] args)
+
+//=================================================================	
+						** SUBARRAYS**
+
+A subarray is a portion of an array that can be selected by specifying two indices, a starting index and an ending index.
+In Java, arrays are indexed starting at 0, so the first element of an array is at index 0, the second element is at index 1, and so on.
+To create a subarray, you can use the Arrays.copyOfRange() method, which takes in three parameters: the original array, the starting index, and the ending index.
+The method returns a new array containing the elements of the original array within the specified range.
+The returned subarray has the same component type as the original array.
+For example, if you have an array int[] arr = {1, 2, 3, 4, 5} and you want to create a subarray of the elements from index 1 to index 3, you can use the following code:
+
+int[] subarray = Arrays.copyOfRange(arr, 1, 4);
+
+This will create a new array subarray containing the elements 2, 3, 4.
+It's important to note that the copyOfRange() method does not modify the original array and returns a new array with the specified range of elements.
+You can also use loops or the System.arraycopy() method to create subarrays.
+The System.arraycopy() method is a built-in method in Java that allows you to copy elements from one array to another.
+You can use this method to create a subarray by specifying the original array, the starting index of the subarray, the destination array, the starting index of the destination array, and the number of elements to copy.
+
+int[] subarray = new int[3];
+System.arraycopy(arr, 1, subarray, 0, 3);
+
+This will copy the elements from index 1 to index 3 of the original array arr to the subarray subarray.
+
+Another way to create a subarray is by using a loop. You can iterate through the original array, starting at the specified starting index and ending at the specified ending index, and add the elements to a new array.
+
+
+int[] subarray = new int[3];
+for (int i = 1; i < 4; i++) {
+    subarray[i-1] = arr[i];
+}
+
+This will create a new array subarray and fill it with the elements from index 1 to index 3 of the original array arr.
+
+It's also possible to create subarrays using the slice() method in the Arrays class, but it's not supported by Java and it's not a standard library.
+
+It's important to note that when working with subarrays, you must take care of the indexing, to avoid going out of bounds and causing an exception.
