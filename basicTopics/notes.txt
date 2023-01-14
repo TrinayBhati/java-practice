@@ -1,3 +1,5 @@
+						**CHEAAT SHEET**
+
 1.Variables:
 	Declared with a specific data type (e.g. int, double, boolean, etc.)	
 	Examples: int x = 5; double d = 3.14; String s = "Hello";
@@ -72,3 +74,47 @@ This will create a new array subarray and fill it with the elements from index 1
 It's also possible to create subarrays using the slice() method in the Arrays class, but it's not supported by Java and it's not a standard library.
 
 It's important to note that when working with subarrays, you must take care of the indexing, to avoid going out of bounds and causing an exception.
+
+//=================================================================	
+			** array.length and String.length()**
+			
+The length property of an array is a final variable that is a property of the array class and it's used to get the number of elements in an array. It's a public, non-static and final field. Since it's a property and not a method, it doesn't need to be called using parentheses.
+
+On the other hand, the length() method of a String is a method provided by the String class, which returns the number of characters in the string. Methods are called using parentheses and a set of parentheses is used to differentiate it from the property.
+
+ we don't use parentheses when using array.length because it's a property, not a method. While we use () when using string.length() because it's a method.
+
+ //================================================================
+
+ 				** dsa imp questions **
+
+1. How do you implement a stack data structure?
+2. How do you implement a queue data structure?
+3. How do you implement a linked list?
+4. How do you find the middle element of a singly linked list in one pass?
+5. How do you reverse a singly linked list?
+6. How do you implement a binary search algorithm?
+7. How do you sort an array using bubble sort, insertion sort, or selection sort?
+8. How do you implement a hash table?
+9. How do you find the largest and smallest elements in an unsorted array?
+10. How do you find the longest common prefix of a set of strings?
+11. How do you implement a dynamic array?
+12. How do you implement a stack using an array?
+13. How do you implement a queue using an array?
+14. How do you implement a circular buffer?
+15. How do you implement a simple LRU cache?
+16. How do you implement a sorting algorithm such as quicksort or merge sort?
+17. How do you find the kth smallest element in an array?
+18. How do you find the longest increasing subsequence of an array?
+19. How do you implement a search algorithm such as binary search?
+20. How do you find the most frequent element in an array?
+21. Given an array of integers, how would you find the pair of integers that have the smallest difference?
+22. Given a matrix of integers, how would you find the element in the matrix that is closest to a given value?
+23. Given a string, how would you check if it is a palindrome?
+24. Given a string, how would you reverse the words in it?
+25. Given two arrays, how would you find the intersection of the arrays?
+26. Given an array of integers, how would you find the contiguous sub-array with the largest sum?
+27. Given a linked list, how would you remove duplicates from it?
+28. Given a binary tree, how would you check if it is a binary search tree?
+29. Given a string, how would you find the first non-repeated character in it?
+30. Given a 2D array of integers, how would you rotate it by 90 degrees in place?
