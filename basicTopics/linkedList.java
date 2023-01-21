@@ -1,6 +1,6 @@
 package basicTopics;
 
-
+    
 
 
         /*
@@ -129,32 +129,32 @@ class list{
     }
     int popLast(){
             if(head == null){ // when list is empty
-                    System.out.println("list is empty");
-                    return -1;
+                System.out.println("list is empty");
+                return -1;
             }
             if(head.next == null){ // when list got only 1 node
-                    int deletedValue = head.data;
-                    head = null;
-                    return deletedValue;
+                int deletedValue = head.data;
+                head = null;
+                return deletedValue;
             }
             Node temp = head;
             while(temp.next.next != null){
-                    temp = temp.next;
+                temp = temp.next;
             }
             int deletedValue = temp.next.data;
             temp.next = null;
             return deletedValue;
-    }
-    int popBegin(){
-        if(head == null){
-            System.out.println("error");
-            return -1;
         }
-        int deletedValue = head.data;
-        head = head.next;
-        return deletedValue;
-    }
-    boolean isEmpty(){
+        int popBegin(){
+            if(head == null){
+                System.out.println("error");
+                return -1;
+            }
+            int deletedValue = head.data;
+            head = head.next;
+            return deletedValue;
+        }
+        boolean isEmpty(){
  /*if(head == null){
                     return true;
             }
@@ -162,79 +162,79 @@ class list{
                     return false;
             }*/
             return head == null; // simplified form of the above if else
-    }
-    void print(){
-        Node temp = head;
-        while(temp != null ){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
         }
-        System.out.print(temp);
-    }
-    private int getSize(){
-        int count = 0;
-        Node temp = head;
-        while(temp != null){
-            count++;
-            temp = temp.next;
+        void print(){
+            Node temp = head;
+            while(temp != null ){
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.print(temp);
         }
-        return count;
-    }
-    void pushPos(int data, int pos){
-        int size = getSize();
-        if(pos > size + 1){
-            System.out.println("error");
-            return;
+        private int getSize(){
+            int count = 0;
+            Node temp = head;
+            while(temp != null){
+                count++;
+                temp = temp.next;
+            }
+            return count;
         }
-        Node newNode = new Node(data);
-        if(head == null){
-            head = newNode;
-            return;
-        }
-        Node temp = head;
+        void pushPos(int data, int pos){
+            int size = getSize();
+            if(pos > size + 1){
+                System.out.println("error");
+                return;
+            }
+            Node newNode = new Node(data);
+            if(head == null){
+                head = newNode;
+                return;
+            }
+            Node temp = head;
         //reach position 1 node behind the required position
-        for(int i = 1; i < pos - 1 ; i++){
-            temp = temp.next;
+            for(int i = 1; i < pos - 1 ; i++){
+                temp = temp.next;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
         }
-        newNode.next = temp.next;
-        temp.next = newNode;
-    }
-    int popPos( int pos ){
-        int size = getSize();
-        if(pos > size){
-            System.out.println("error");
-            return -1;
-        }
-        if(head.next == null){
-            int devalue = head.data;
-            head = null;
-            return devalue;
-        }
-        if (pos == 1 ){
-            int delValue = head.data;
-            head = head.next;
-            return delValue;
-        }
-        Node temp = head;
-        for(int i = 1; i < pos-1 ; i++){
-            temp = temp.next;
-        }
-        int deVal = temp.next.data;
-        temp.next =  temp.next.next;
-        return deVal;
+        int popPos( int pos ){
+            int size = getSize();
+            if(pos > size){
+                System.out.println("error");
+                return -1;
+            }
+            if(head.next == null){
+                int devalue = head.data;
+                head = null;
+                return devalue;
+            }
+            if (pos == 1 ){
+                int delValue = head.data;
+                head = head.next;
+                return delValue;
+            }
+            Node temp = head;
+            for(int i = 1; i < pos-1 ; i++){
+                temp = temp.next;
+            }
+            int deVal = temp.next.data;
+            temp.next =  temp.next.next;
+            return deVal;
 
-    }
-    void reverse(){
-        if(head == null){
-            return;
         }
-        Node pre = head;
-        Node cur = pre.next;
-        Node post = null;
-        if(cur != null){
-           post = cur.next;
-        }
-        while (cur != null) {
+        void reverse(){
+            if(head == null){
+                return;
+            }
+            Node pre = head;
+            Node cur = pre.next;
+            Node post = null;
+            if(cur != null){
+             post = cur.next;
+         }
+         while (cur != null) {
             cur.next = pre;
             pre = cur;
             cur = post;
