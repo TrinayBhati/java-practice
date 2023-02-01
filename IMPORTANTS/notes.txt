@@ -1,0 +1,16 @@
+1. Binary Search
+2. Linerar Search
+3. Bubble Sort
+4. Insertion Sort
+5. Selection Sort
+6. Quick Sort
+7. Merge Sort
+8. Palindrome with numbers and String
+9. Prefix Sum and Kadane Algorithm
+10. Two pointer Approach
+11. Sub Arrays and Sliding windows
+12. Modular Inverse Problem
+13. How to find Kth largest/smallest element 
+14. How to reverse an array
+15. Spiral array traversal
+16. 
