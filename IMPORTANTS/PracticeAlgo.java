@@ -54,24 +54,46 @@ class linearSearch{
 
 //========================================================
 
-class binarySearch{
-	public static void main(String[] args) {
-		int arr[] = {2, 3, 5, 6, 8, 12, 90, 990};
-		int x = 8;
-		int n = arr.length;
-		int mid;
-		int f = 0 ; int l = n-1;
+//incorrect code
 
-		for(int i = 0 ; i< n ; i++){
-			int mid = f+(l-f)/2;
-			if(arr[mid] == x){return mid;
-				}			
-			else if(arr[mid] < x){f =  mid +1;
-				}					
-			if{
-				l = mid-1;
+// class binarySearch{
+// 	public static void main(String[] args) {
+// 		int arr[] = {2, 3, 5, 6, 8, 12, 90, 990};
+// 		int x = 8;
+// 		int n = arr.length;
+// 		int mid;
+// 		int f = 0 ; int l = n-1;
+
+// 		while(f<=l){
+// 			mid = f+(l-f)/2;
+// 			if(arr[mid] == x){return mid;
+// 				}			
+// 			else if(arr[mid] < x){f =  mid +1;
+// 				}					
+// 			else{
+// 				l = mid-1;
+// 				}
+// 		}
+// 		return -1;
+// 	
+// }
+
+//=============================================================================
+
+class Bubble{
+	public static int sort(int arr[]){
+		int n = arr.length;
+
+		for(int i = 0; i<n-1 ; i++){
+			for(int j = i+1 ; j<n; j++){
+				if(arr[j] > arr[j+1]){
+
 				}
+			}
 		}
-		return -1;
+	}
+	public static void main(String[] args) {
+		int arr[] = {2,3,121,5,32,75,89,123,8};
+		System.out.print(sort(arr) + " ");
 	}
 }
