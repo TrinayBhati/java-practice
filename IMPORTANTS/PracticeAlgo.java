@@ -1,4 +1,4 @@
-
+Binary Search
 
 class binarySearch{
 	public static boolean isSorted(int arr[]){
@@ -36,6 +36,8 @@ class binarySearch{
 
 //====================================================================
 
+Linear Seach 
+
 class linearSearch{
 	public static int search(int arr[] , int x){
 		for(int i = 0 ; i< arr.length ; i++){
@@ -54,40 +56,43 @@ class linearSearch{
 
 //========================================================
 
-//incorrect code
+Binary Search
 
-// class binarySearch{
-// 	public static void main(String[] args) {
-// 		int arr[] = {2, 3, 5, 6, 8, 12, 90, 990};
-// 		int x = 8;
-// 		int n = arr.length;
-// 		int mid;
-// 		int f = 0 ; int l = n-1;
+class binarySearch{
+	public static void main(String[] args) {
+		int arr[] = {2, 3, 5, 6, 8, 12, 90, 990};
+		int x = 8;
+		int n = arr.length;
+		int mid;
+		int f = 0 ; int l = n-1;
 
-// 		while(f<=l){
-// 			mid = f+(l-f)/2;
-// 			if(arr[mid] == x){return mid;
-// 				}			
-// 			else if(arr[mid] < x){f =  mid +1;
-// 				}					
-// 			else{
-// 				l = mid-1;
-// 				}
-// 		}
-// 		return -1;
-// 	
-// }
+		while(f<=l){
+			mid = f+(l-f)/2;
+			if(arr[mid] == x){return mid;
+				}			
+			else if(arr[mid] < x){f =  mid +1;
+				}					
+			else{
+				l = mid-1;
+				}
+		}	
+	}
+}
 
 //=============================================================================
+
+Bubble Sort
 
 class Bubble{
 	public static int sort(int arr[]){
 		int n = arr.length;
 
 		for(int i = 0; i<n-1 ; i++){
-			for(int j = i+1 ; j<n; j++){
+			for(int j = 0 ; j<n-i-1; j++){
 				if(arr[j] > arr[j+1]){
-
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
 				}
 			}
 		}
@@ -97,3 +102,7 @@ class Bubble{
 		System.out.print(sort(arr) + " ");
 	}
 }
+
+//==================================================================
+
+Selection Sort
