@@ -12,7 +12,7 @@ public class twoPointers {
         int n = a.length;
 
         int b[] = {1, 3, 3, 9};
-        int m = a.length;
+        int m = b.length;
 
         int i=0;
         int j=0;
